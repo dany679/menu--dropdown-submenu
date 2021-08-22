@@ -91,5 +91,27 @@ body {
   header {
     padding: 20px;
   }
+  header nav.navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  header nav.navbar ul li {
+    width: 100%;
+  }
+  header nav.navbar ul li a {
+    width: 100%;
+  }
+  header nav.navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header nav.navbar ul li ul li {
+    background: #000;
+  }
+  header nav.navbar ul li ul li ul {
+    left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

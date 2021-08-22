@@ -79,4 +79,28 @@ body{
     header{
         padding: 20px;
     }
+    header nav.navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        ul li{
+            width: 100%;
+            a{
+                width: 100%;
+            }
+            ul{
+                position: relative;
+                width: 100%;
+
+                li{
+                    background: #000;
+
+                    ul{
+                        left:0;
+                    }
+                }
+            }
+        }
+    }
 }
