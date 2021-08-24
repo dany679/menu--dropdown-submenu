@@ -82,12 +82,29 @@ header .logo {
   color: whitesmoke;
 }
 
+header .burger {
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 6px 8px;
+  border-radius: 20px;
+  display: none;
+}
+
+header .burger:hover {
+  background: #898989;
+  display: inline;
+}
+
 body {
   min-height: 100vh;
   background: #989898;
 }
 
 @media (max-width: 1000px) {
+  .burger {
+    display: block !important;
+  }
   header {
     padding: 20px;
   }
@@ -96,6 +113,8 @@ body {
     top: 100%;
     left: 0;
     right: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   header nav.navbar ul li {
     width: 100%;
@@ -112,6 +131,13 @@ body {
   }
   header nav.navbar ul li ul li ul {
     left: 0;
+  }
+  header nav.navbar.active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    display: block;
+    -webkit-transition: all ease .4s;
+    transition: all ease .4s;
   }
 }
 /*# sourceMappingURL=style.css.map */
